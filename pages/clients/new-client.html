@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+         <h3>User ID:</h3>
+         <h3>Fecha:</h3>
+         <h3>Hora:</h3>
+        </div>     
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+   </nav>
+   
+   <section class="w-[98%] h-[100px] mx-auto mt-[1%] flex justify-center">
+    <div id="form-div" class="bg-[#DCDCDC] w-[90%] h-[950px] rounded-sm flex flex-col items-center justify-around shadow-lg">
+        <h1 class=" w-[60%] font-sans font-bold text-center text-4xl">Registro de Clientes</h1>
+        
+        <form id="new-client-form" action="" class="w-[90%] pl-5 flex flex-col gap-y-9">
+            <div>
+                <label for="" class="font-semibold text-2xl">Número de cliente</label></p>
+                <input type="text" placeholder="12940324" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+            <div>
+                <label for="" class="font-semibold text-2xl">Nombre de cliente</label></p>
+                <input type="text" placeholder="Nombre Apellidos" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+            <div>
+                <label for="" class="font-semibold text-2xl">Teléfono de contacto</label></p>
+                <input type="text" placeholder="55-12-45-32-67" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+            <div>
+                <label for="" class="font-semibold text-2xl">Dirección</label></p>
+                <input type="text" placeholder="Calle #2 Col." class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+            <div>
+                <label for="" class="font-semibold text-2xl">Correo Electrónico</label></p>
+                <input type="text" placeholder="correo@example.com" class="w-[95$] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+        </form>
+
+        <div class="w-[90%] h-[5%] flex flex-row justify-around">
+            <button id="btn-accept" class="bg-teal-500 w-[25%] text-white rounded-md ring-2 hover:ring-4">Cancelar</button>
+            <button id="btn-accept" class="bg-[#0E5F85] w-[25%] text-white rounded-md ring-2 hover:ring-4">Aceptar</button>
+        </div>  
+    </div>
+    </section>
+</body>
+</html>
