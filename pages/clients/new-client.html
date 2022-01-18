@@ -13,9 +13,9 @@
             <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
         </a>
         <div class="flex justify-around font-sans font-semibold text-lg text-white">
-         <h3>User ID:</h3>
-         <h3>Fecha:</h3>
-         <h3>Hora:</h3>
+        <h3>User ID:</h3>
+        <h3>Fecha:</h3>
+        <h3>Hora:</h3>
         </div>     
     </header>
     <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
@@ -35,40 +35,40 @@
                 </li>
             </ul>
         </div>
-   </nav>
-   
-   <section class="w-[98%] h-[100px] mx-auto mt-[1%] flex justify-center">
-    <div id="form-div" class="bg-[#DCDCDC] w-[90%] h-[950px] rounded-sm flex flex-col items-center justify-around shadow-lg">
-        <h1 class=" w-[60%] font-sans font-bold text-center text-4xl">Registro de Clientes</h1>
-        
-        <form id="new-client-form" action="" class="w-[90%] pl-5 flex flex-col gap-y-9">
+    </nav>
+
+    <section id="new-client-section" class="w-2/3 h-screen mx-auto mt-[3%] p-2 bg-slate-300 flex flex-col justify-center gap-y-10 shadow-xl rounded-lg">
+        <h1 class="text-3xl font-bold italic text-center p-4">Formulario para agregar clientes nuevos</h1>
+        <form action="" class="flex flex-col self-center gap-y-6 mb-4 text-xl font-semibold">
             <div>
-                <label for="" class="font-semibold text-2xl">Número de cliente</label></p>
-                <input type="text" placeholder="12940324" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                <label for="ID">ID Cliente*</label>
+                <input type="text" name="ID" placeholder="1234693" required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
             </div>
             <div>
-                <label for="" class="font-semibold text-2xl">Nombre de cliente</label></p>
-                <input type="text" placeholder="Nombre Apellidos" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                <label for="Name">Nombre(s)*</label>
+                <input type="text" name="Name" required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
             </div>
             <div>
-                <label for="" class="font-semibold text-2xl">Teléfono de contacto</label></p>
-                <input type="text" placeholder="55-12-45-32-67" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                <label for="LastName">Apellidos*</label>
+                <input type="text" name="LastName" required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>    
+            <div>
+                <label for="Address">Dirección*</label>
+                <input type="text" name="Address" required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
             </div>
             <div>
-                <label for="" class="font-semibold text-2xl">Dirección</label></p>
-                <input type="text" placeholder="Calle #2 Col." class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                <label for="Phone">Número telefónico*</label>
+                <input type="text" name=Phone required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
             </div>
             <div>
-                <label for="" class="font-semibold text-2xl">Correo Electrónico</label></p>
-                <input type="text" placeholder="correo@example.com" class="w-[95$] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                <label for="Email">Correo electrónico*</label>
+                <input type="text" name="Email" required class="w-1/3 rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+            </div>
+            <div class="flex gap-x-2">
+                <button class="w-1/2 bg-sky-400 p-1.5 rounded bg-gradient-to-r from-amber-600 to-yellow-500 hover:ring-2 hover:ring-orange-500 hover:font-semibold">Cancelar</button>
+                <button class="w-1/2 p-1.5 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Agregar</button>
             </div>
         </form>
-
-        <div class="w-[90%] h-[5%] flex flex-row justify-around">
-            <button id="btn-accept" class="bg-teal-500 w-[25%] text-white rounded-md ring-2 hover:ring-4">Cancelar</button>
-            <button id="btn-accept" class="bg-[#0E5F85] w-[25%] text-white rounded-md ring-2 hover:ring-4">Aceptar</button>
-        </div>  
-    </div>
     </section>
 </body>
 </html>
