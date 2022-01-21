@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+            <h3>User ID:</h3>
+            <h3>Fecha:</h3>
+            <h3>Hora:</h3>
+        </div>     
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="search-client-section" class="w-full h-screen flex flex-col items-center">
+        <p class="text-sm italic text-slate-500 mt-14">
+            Para modificar los datos de un cliente, primero ingrese su ID. Esto le mostrará un formulario con los datos
+            correspondientes al ID ingresado y entonces podrá hacer los cambios que se desee.
+        </p> 
+        <div class=" w-11/12  flex items-strech justify-around mt p-4 ">
+            <h1 class="text-3xl text-center font-bold italic">Modificar Cliente</h1>
+            <form id="search-client-form" action="modify-client.html">
+                <label for="ID" class="text-lg font-semibold h-full">Buscar Cliente:</label>
+                <input type="text" placeholder="ID cliente" name="ID" requiered class="h-full border border-slate-400 rounded pl-4">
+                <button class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
+            </form>
+        </div>    
+    </section>
+</body>
+</html>

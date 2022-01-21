@@ -19,7 +19,7 @@
             
             <div id="form-login" class="bg-[#DCDCDC] w-[50%] h-[100%] rounded-sm flex flex-col items-center justify-around shadow-lg">
                 <h2 class="font-sans font-bold text-center text-4xl">Inicio de Sesión</h2>
-                <form action="" class="w-[90%] pl-5 flex flex-col gap-y-9">
+                <form action="pages/main.html" class="w-[90%] pl-5 flex flex-col gap-y-9">
                     <div>
                         <label for="" class="font-semibold text-2xl">Usuario</label></p>
                         <input type="text" placeholder="username@example.com" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
@@ -28,18 +28,14 @@
                         <label for="" class="font-semibold text-2xl">Contraseña</label></p>
                         <input type="password" placeholder="********" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
                     </div>
-                </form>
-
-                <div class="w-[90%] flex flex-row justify-center">
-                    <div class="w-[35%] text-[#666666]"> 
-                        <a href="pages/session/new-user.html">Usuario nuevo</a></p>
-                        <a href="pages/session/recover-pwd-1.html">Olvidé mi contraseña</a>
+                    <div class="w-11/12 flex flex-row justify-center">
+                        <div class="w-[35%] text-[#666666]"> 
+                            <a href="pages/session/new-user.html" class="hover:underline">Usuario nuevo</a></p>
+                            <a href="pages/session/recover-pwd-1.html" class="hover:underline">Olvidé mi contraseña</a>
+                        </div>
+                        <button id="btn-accept" class="bg-[#0E5F85] w-11/12 h-full text-white rounded-md ring-2 hover:ring-4 hover:w-[95%]">Entrar</button>
                     </div>
-                    <a href="pages/main.html" class="w-[60%]">
-                        <button id="btn-accept" class="bg-[#0E5F85] w-[90%] h-[100%] text-white rounded-md ring-2 hover:ring-4 hover:w-[95%]">Entrar</button>
-                    </a>
-                </div>
-                
+                </form>                
             </div>
         </div>
     </section>
