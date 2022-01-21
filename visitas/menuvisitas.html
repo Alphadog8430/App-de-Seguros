@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+         <h3>User ID:</h3>
+         <h3>Fecha:</h3>
+         <h3>Hora:</h3>
+        </div>     
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-visitas.html">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="menu-clients-section" class="w-full my-12 flex justify-center gap-x-6">
+        <div class="w-1/5 p-3 flex flex-col self-center gap-y-8 bg-sky-200 rounded-sm shadow-lg shadow-sky-400">
+            <h1 class="font-semibold text-4xl text-center italic">Menú Visitas</h1>
+            <p class="text-justify text-xl">En la sección de visitas encontrás todo lo relacionado a las visitas.
+                Podras agendar nuevas visitas, eliminar o modificar si es necesario.
+            </p>
+        </div>
+        <div id="new-client-card" class="w-1/5 rounded shadow-lg bg-slate-300 hover:border-solid hover:border-4 hover:border-gray-800 hover:w-3[21%]">
+            <img class="p-3 mx-auto" src="/assets/images/new-client.png" alt="Nuevo Cliente Icon">
+            <div class="px-6 py-4">
+                <a href="/visitas/Agregar visitas/ad-new-v.html" class="font-bold text-xl hover:text-gray-800">Agendar nueva visita</a>
+                <p class="text-gray-700 text-base">
+                    Accede al formulario para agregar una nueva visita.
+                </p>
+            </div>
+        </div>
+        <div id="modify-client-card" class="w-1/5 rounded shadow-lg bg-slate-300 hover:border-solid hover:border-4 hover:border-gray-800 hover:w-[21%]">
+            <img class="p-3 mx-auto" src="/assets/images/modify-icon.png" alt="Modificar Clientes Icon">
+            <div class="px-6 py-4">
+                <a href="modify-client.html" class="font-bold text-xl hover:text-gray-800">Modificar visita</a>
+                <p class="text-gray-700 text-base">
+                    Actualiza o modifica el lugar o la fecha de la visita.
+                </p>
+            </div>
+        </div>
+        <div id="list-client-card" class="max-w-xs rounded shadow-lg bg-slate-300 hover:border-solid hover:border-4 hover:border-gray-800 hover:w-[21%]">
+            <img class="p-3 mx-auto" src="/assets/images/list-clients.png" alt="Lista de Clientes Icon">
+            <div class="px-6 py-4">
+                <a href="list-client.html" class="font-bold text-xl hover:text-gray-800">Visitas agendadas</a>
+                <p class="text-gray-700 text-base">
+                    Ve todas las visitas y su estado.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+</html>
