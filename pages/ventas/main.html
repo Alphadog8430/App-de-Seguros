@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+            <h3>User ID:</h3>
+            <h3>Fecha:</h3>
+            <h3>Hora:</h3>
+        </div>
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="../clients/menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="">
+        <!-- TODO: Ajustar el tamaño del div con clases (tailwind) -->
+        <div class="">
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+    <section id="buttons">
+        <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-md w-full space-y-8">
+                <div>
+                    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                        Actualizar registros
+                    </h2>
+                </div>
+                <form class="mt-8 space-y-6" action="#">
+                    <input type="hidden" name="remember" value="true">
+                    <div class="rounded-md shadow-sm -space-y-px">
+                        <div>
+                            <label for="dia_semana" class="sr-only">Email address</label>
+                            <select name="dia_semana" id="dia_semana" required class='appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm'>
+                                <option selected>-Seleciona un día-</option>
+                                <option value="0">Lunes</option>
+                                <option value="1">Martes</option>
+                                <option value="2">Miércoles</option>
+                                <option value="3">Jueves</option>
+                                <option value="4">Viernes</option>
+                                <option value="5">Sábado</option>
+                                <option value="6">Domingo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cantidad" class="sr-only">Password</label>
+                            <input id="cantidad" name="cantidad" type="number" autocomplete="off"
+                                required
+                                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="Cantidad">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" id="btnGuardar"
+                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                                <!-- Heroicon name: solid/lock-closed -->
+                            </span>
+                            Guardar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="./main.js"></script>
+</body>
+
+</html>
