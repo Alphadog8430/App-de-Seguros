@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar nueva visita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+         <h3>User ID:</h3>
+         <h3>Fecha:</h3>
+         <h3>Hora:</h3>
+        </div>     
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1 mb-4">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/visitas/menuvisitas.html">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="w-full h-200 grid justify-items-center">
+        
+            <div class="w-3/5 bg-sky-200 shadow-16 ">
+               
+                <div class="flex flex-col text-center">
+                    <h1 class="text-2xl font-bold my-2">Lista de visitas agendadas</h1>
+                <h3 class="text-base font-semibold my-2">Agenda nuevas visitas a tu itinerario</h3>
+                </div>
+                
+
+                <div class=" grid  justify-items-center ">
+                    <table class="table-fixed">
+                        <thead>
+                          <tr class="mr-2">
+                            <th>Nombre</th>
+                            <th>Lugar</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Correo</th>
+                            <th>Empresa</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Francisco Martienz  </td>
+                            <td>Sierra madre #3419  </td>
+                            <td>10/Octubre/2022  </td>
+                            <td>3:00 pm  </td>
+                            <td>franmtz96@gmail.com  </td>
+                            <td>Pioneer  </td>
+                          </tr>
+                          <tr>
+                            <td>Ernesto Balderrama  </td>
+                            <td>Juan escutia #3365  </td>
+                            <td>09/Febrero/2022  </td>
+                            <td>9:00 am  </td>
+                            <td>-----  </td>
+                            <td>Lala  </td>
+                          </tr>
+                          <tr>
+                            <td>Alan Esparza</td>
+                            <td>Av periferico #2210</td>
+                            <td>15/Mayo/2022</td>
+                            <td>11:00 am</td>
+                            <td>Alanesparza16@hotmail.com</td>
+                            <td>Lavasolas Esparza</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                   
+              </div>
+
+              <div class=" flex justify-center ">
+                  <button href="/visitas/Agregar visitas/ad-new-v.html" class="font-bold w-40 bg-stone-200 px-4 grid rounded-lg content-center my-12 h-12">Agregar nueva visita</button>
+              </div>  
+    </div>
+</body>
+</html>
