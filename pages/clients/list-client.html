@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-28 bg-[#0A3C53] mx-auto flex flex-col justify-center gap-y-2">
+        <a href="/pages/main.html" class="h-14 mx-auto">
+            <img id="logo-home" src="/assets/images/principal-logo.png" alt="Logo Principal" class="h-14 rounded-sm">   
+        </a>
+        <div class="flex justify-around font-sans font-semibold text-lg text-white">
+            <h3>User ID:</h3>
+            <h3>Fecha:</h3>
+            <h3>Hora:</h3>
+        </div>     
+    </header>
+    <nav class="w-full h-10 bg-stone-200 text-lg shadow-md pt-1">
+        <div>
+            <ul class="flex flex col justify-end pr-16 gap-x-4">
+                <li class="hover:font-semibold">
+                    <a href="">Ventas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="">Visitas</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="menu-client.html">Clientes</a>
+                </li>
+                <li class="hover:font-semibold">
+                    <a href="/index.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ejemplo de cómo se mostrarían los registros de la BD -->
+    <section id="list-client-section" class="w-full h-screen flex flex-col items-center">
+        <div class=" w-11/12  flex flex-col items-strech mt-14 p-4 ">
+            <div class="w-full flex justify-between">
+                <h1 class="text-3xl text-center font-bold italic">Lista de Clientes</h1>
+                <form id="search-client-form" action="">
+                    <label for="ID" class="text-lg font-semibold h-full">Buscar Cliente:</label>
+                    <input type="text" placeholder="ID cliente" name="ID" requiered class="h-full border border-slate-400 rounded pl-4">
+                    <button class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
+                </form>
+            </div>
+            <table class="table-auto border-collapse border border-slate-700 mt-14 rounded text-center">
+                <tr>
+                    <th class="border border-slate-600 rounded">ID</th>
+                    <th class="border border-slate-600 rounded">Nombre</th>
+                    <th class="border border-slate-600 rounded">Apellidos</th>
+                    <th class="border border-slate-600 rounded">Dirección</th>
+                    <th class="border border-slate-600 rounded">Número Telefónico</th>
+                    <th class="border border-slate-600 rounded">Correo Electrónico</th>
+                </tr>
+                <tr class="hover:bg-sky-200">
+                    <td class="border border-slate-600 rounded">12344</td>
+                    <td class="border border-slate-600 rounded">Andrea</td>
+                    <td class="border border-slate-600 rounded">Serrano Rivera</td>
+                    <td class="border border-slate-600 rounded">Naranjo #6. Las Huertas 3ra Secc.</td>
+                    <td class="border border-slate-600 rounded">55-12-45-67-32</td>
+                    <td class="border border-slate-600 rounded">a.serrano@gmail.com</td>
+                </tr>
+                <tr class="hover:bg-sky-200">
+                    <td class="border border-slate-600 rounded">12344</td>
+                    <td class="border border-slate-600 rounded">Andrea</td>
+                    <td class="border border-slate-600 rounded">Serrano Rivera</td>
+                    <td class="border border-slate-600 rounded">Naranjo #6. Las Huertas 3ra Secc.</td>
+                    <td class="border border-slate-600 rounded">55-12-45-67-32</td>
+                    <td class="border border-slate-600 rounded">a.serrano@gmail.com</td>
+                </tr>
+            </table>
+        </div>    
+    </section>
+</body>
+</html>

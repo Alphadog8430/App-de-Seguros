@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario Nuevo App de Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-[98%] h-[600px] bg-[#0A3C53] m-[1%] flex items-center justify-center border-4 border-[#3D80CC] shadow-md shadow-[#3D80CC] rounded-xl">
+        <div id="form-div" class="bg-[#DCDCDC] w-[50%] h-[550px] rounded-sm flex flex-col items-center justify-around shadow-lg">
+            <img class="rounded-md w-[30%] h-[20%]" src="/assets/images/principal-logo.png" alt="Logo Principal">
+            <h1 class=" w-[60%] font-sans font-bold text-center text-4xl">Usuario Nuevo</h1>
+            
+            <form id="new-user-form" action="" class="w-[90%] pl-5 flex flex-col gap-y-9">
+                <div>
+                    <label for="" class="font-semibold text-2xl">Número de empleado</label>
+                    <input type="text" placeholder="12940324" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                </div>
+                <div>
+                    <label for="" class="font-semibold text-2xl">Contraseña</label>
+                    <input type="password" placeholder="********" class="w-[95%] h-[70%] pl-[10px] rounded-md border-2 border-[#0E5F85] hover:border-2 hover:border-[#3D80CC]">
+                </div>
+                <div class="w-[90%] flex flex-row justify-center">
+                    <div class="w-[35%] h-[50px] text-[#666666] underline"> 
+                        <a href="/index.html">Volver a inicio de sesión</a></p>
+                    </div>
+                    <button id="btn-accept" class="bg-[#0E5F85] w-[55%] text-white rounded-md ring-2 hover:ring-4 hover:w-[60%]">Aceptar</button>
+                </div>  
+            </form>
+
+        </div>
+    </section>
+</body>
+</html>
