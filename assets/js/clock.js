@@ -1,13 +1,13 @@
-const clock = document.getElementById('clock');
-const date = document.getElementById('date');
+var clock = document.getElementById('clock');
+var date = document.getElementById('date');
 
-const interval = setInterval(() =>{
+var interval = setInterval(() =>{
 
-    const dateT = new Date();
+    var dateT = new Date();
     
-    let day = dateT.getDate();
-    let month = dateT.getMonth();
-    let year = dateT.getFullYear();
+    var day = dateT.getDate();
+    var month = dateT.getMonth();
+    var year = dateT.getFullYear();
 
     clock.innerHTML = dateT.toLocaleTimeString();
     date.innerHTML = dateT.toLocaleDateString();

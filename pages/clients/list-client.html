@@ -42,39 +42,19 @@
         <div class=" w-11/12  flex flex-col items-strech mt-14 p-4 ">
             <div class="w-full flex justify-between">
                 <h1 class="text-3xl text-center font-bold italic">Lista de Clientes</h1>
-                <form id="search-client-form" action="">
+
+                <form id="search-client-form">
                     <label for="ID" class="text-lg font-semibold h-full">Buscar Cliente:</label>
-                    <input type="text" placeholder="ID cliente" name="ID" requiered class="h-full border border-slate-400 rounded pl-4">
-                    <button class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
+                    <input type="text" id="idClient" placeholder="ID cliente" name="idClient" requiered class="h-full border border-slate-400 rounded pl-4">
+                    <button type="button" id="btnFind" class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
                 </form>
             </div>
-            <table class="table-auto border-collapse border border-slate-700 mt-14 rounded text-center">
-                <tr>
-                    <th class="border border-slate-600 rounded">ID</th>
-                    <th class="border border-slate-600 rounded">Nombre</th>
-                    <th class="border border-slate-600 rounded">Apellidos</th>
-                    <th class="border border-slate-600 rounded">Dirección</th>
-                    <th class="border border-slate-600 rounded">Número Telefónico</th>
-                    <th class="border border-slate-600 rounded">Correo Electrónico</th>
-                </tr>
-                <tr class="hover:bg-sky-200">
-                    <td class="border border-slate-600 rounded">12344</td>
-                    <td class="border border-slate-600 rounded">Andrea</td>
-                    <td class="border border-slate-600 rounded">Serrano Rivera</td>
-                    <td class="border border-slate-600 rounded">Naranjo #6. Las Huertas 3ra Secc.</td>
-                    <td class="border border-slate-600 rounded">55-12-45-67-32</td>
-                    <td class="border border-slate-600 rounded">a.serrano@gmail.com</td>
-                </tr>
-                <tr class="hover:bg-sky-200">
-                    <td class="border border-slate-600 rounded">12344</td>
-                    <td class="border border-slate-600 rounded">Andrea</td>
-                    <td class="border border-slate-600 rounded">Serrano Rivera</td>
-                    <td class="border border-slate-600 rounded">Naranjo #6. Las Huertas 3ra Secc.</td>
-                    <td class="border border-slate-600 rounded">55-12-45-67-32</td>
-                    <td class="border border-slate-600 rounded">a.serrano@gmail.com</td>
-                </tr>
-            </table>
+        
+        <div id="clients" class="mt-10 w-full"></div>
         </div>    
     </section>
+
+    <script src="../../assets/js/dataClients.js"></script>
+    <script src="../../assets/js/app.js"></script>
 </body>
 </html>

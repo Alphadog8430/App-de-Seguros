@@ -44,12 +44,15 @@
         </p> 
         <div class=" w-11/12  flex items-strech justify-around mt p-4 ">
             <h1 class="text-3xl text-center font-bold italic">Modificar Cliente</h1>
-            <form id="search-client-form" action="modify-client.html">
+            <form id="search-client-form">
                 <label for="ID" class="text-lg font-semibold h-full">Buscar Cliente:</label>
-                <input type="text" placeholder="ID cliente" name="ID" requiered class="h-full border border-slate-400 rounded pl-4">
-                <button class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
+                <input id="idClient" type="text" placeholder="ID cliente" name="idClient" requiered class="h-full border border-slate-400 rounded pl-4">
+                <button id="btnFind" class="h-full p-2 rounded bg-gradient-to-r from-emerald-500 to-green-400 hover:ring-2 hover:ring-blue-500 hover:font-semibold">Buscar</button>
             </form>
-        </div>    
+        </div>
+        <div id="clients" class="mt-10 w-full"></div>
     </section>
+    <script src="../../assets/js/dataClients.js"></script>
+    <script src="../../assets/js/app.js"></script>
 </body>
 </html>
